@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Khairy Krayyem | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top floating rotated logo -->
+  <a class="floating-logo" href="#top" aria-label="Go to top">
+    <img src="assets/logo.jpg" alt="Logo" />
+  </a>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container header-inner">
+      <div class="brand-pill">domain.com</div>
+
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile drawer -->
+    <nav class="drawer" id="drawer" aria-hidden="true">
+      <a href="#about" class="drawer-link">About</a>
+      <a href="#projects" class="drawer-link">Projects</a>
+      <a href="#timeline" class="drawer-link">Experience</a>
+      <a href="#skills" class="drawer-link">Skills</a>
+      <a href="#contact" class="drawer-link">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="section hero">
+    <div class="container hero-grid">
+      <div class="hero-left reveal">
+        <p class="kicker">Hi, my name is</p>
+        <h1 class="title">
+          <span class="white">Khairy</span> <span class="white">Krayyem.</span><br/>
+          <span class="accent">I build Full-Stack applications and Cloud-based systems
+.</span>
+        </h1>
+        <p class="subtitle">
+          Software Engineering student Full-Stack applications and Cloud-based systems.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">Check out my work</a>
+          <a class="btn ghost" href="#contact">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-right reveal">
+        <div class="me-card">
+          <img class="me-img" src="assets/me.jpg" alt="Portrait" />
+          <div class="me-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title reveal">About Me</h2>
+
+      <div class="card reveal">
+        <p class="p">
+          I’m <b>Khairy Krayyem</b>, a Software Engineering student specializing in fullstack cloud and security.
+          I enjoy building clean UIs, reliable backends, and real-world projects.
+        </p>
+        <div class="mini-stats">
+          <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Projects</span></div>
+          <div class="stat"><span class="stat-num">3</span><span class="stat-label">Domains</span></div>
+          <div class="stat"><span class="stat-num">1</span><span class="stat-label">Portfolio</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title reveal">Featured Projects</h2>
+
+      <div class="chips reveal" id="chips">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="fullstack">Full-Stack</button>
+        <button class="chip" data-filter="cloud">Cloud</button>
+        <button class="chip" data-filter="cyber">Cybersecurity</button>
+        <button class="chip" data-filter="systems">Systems</button>
+        <button class="chip" data-filter="design">Design</button>
+      </div>
+
+      <div class="grid projects-grid" id="projectsGrid">
+        <!-- Project Card -->
+        <article class="project-card reveal" data-tags="cloud,fullstack">
+          <img src="assets/projects/project1.jpg" alt="Project screenshot" />
+          <div class="project-body">
+            <div class="project-top">
+              <h3>MORINGA & RESET</h3>
+              <span class="badge">Full Stack</span>
+            </div>
+            <p class="p">Full-stack e-commerce platform for a pharmacy, including product management, orders, and admin dashboard..</p>
+            <div class="tags">
+              <span class="tag">React</span><span class="tag">REST API</span><span class="tag">Node.js</span>
+            </div>
+            <div class="project-actions">
+              <a class="link" href="#" target="_blank" rel="noreferrer">Live</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">GitHub</a>
+              <button class="link link-btn" data-modal="modal1">More details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-tags="fullstack,design">
+          <img src="assets/projects/project2.jpg" alt="Project screenshot" />
+          <div class="project-body">
+            <div class="project-top">
+              <h3>SMART HOME</h3>
+              <span class="badge">Full Stack</span>
+            </div>
+            <p class="p">Smart Home management system for controlling devices, automation rules, and user permissions from a single interface..</p>
+            <div class="tags">
+              <span class="tag">React</span><span class="tag">JS</span><span class="tag">CSS</span>
+            </div>
+            <div class="project-actions">
+              <a class="link" href="#" target="_blank" rel="noreferrer">Live</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-tags="fullstack,design">
+          <img src="assets/projects/project3.png" alt="Project screenshot" />
+          <div class="project-body">
+            <div class="project-top">
+              <h3>FACTORY MANAGEMENT</h3>
+              <span class="badge">Full Stack</span>
+            </div>
+            <p class="p"> Factory management system for handling departments, employees, shifts, and operational data.</p>
+            <div class="tags">
+              <span class="tag">GraphQL</span><span class="tag">JS</span><span class="tag">CSS</span>
+            </div>
+            <div class="project-actions">
+              <a class="link" href="#" target="_blank" rel="noreferrer">Live</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-tags="fullstack,design">
+          <img src="assets/projects/project4.jpg" alt="Project screenshot" />
+          <div class="project-body">
+            <div class="project-top">
+              <h3>CLOUD GUARD</h3>
+              <span class="badge">Cloud · Security</span>
+            </div>
+            <p class="p"> Cloud-based monitoring and alerting system for detecting anomalies, logging events, and managing security alerts.</p>
+            <div class="tags">
+              <span class="tag">AWS</span><span class="tag">JS</span><span class="tag">Cloud Monitoring</span>
+            </div>
+            <div class="project-actions">
+              <a class="link" href="#" target="_blank" rel="noreferrer">Live</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-tags="fullstack,design">
+          <img src="assets/projects/project5.png" alt="Project screenshot" />
+          <div class="project-body">
+            <div class="project-top">
+              <h3>CARSHOP</h3>
+              <span class="badge">Design</span>
+            </div>
+            <p class="p">  Modern and responsive car shop website designed with a focus on UX, layout, and visual consistency.</p>
+            <div class="tags">
+              <span class="tag">UI </span><span class="tag">JS</span><span class="tag">CSS </span>
+            </div>
+            <div class="project-actions">
+              <a class="link" href="#" target="_blank" rel="noreferrer">Live</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-tags="fullstack,design">
+          <img src="assets/projects/project6.png" alt="Project screenshot" />
+          <div class="project-body">
+            <div class="project-top">
+              <h3>TASK MANAGER</h3>
+              <span class="badge">Full Stack</span>
+            </div>
+            <p class="p"> Task management web app with create/edit/delete tasks, status tracking, and a clean dashboard UI.</p>
+            <div class="tags">
+              <span class="tag">UI </span><span class="tag">JavaScript</span><span class="tag">REST API </span>
+            </div>
+            <div class="project-actions">
+              <a class="link" href="#" target="_blank" rel="noreferrer">Live</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card reveal" data-tags="fullstack,design">
+          <img src="assets/projects/project7.png" alt="Project screenshot" />
+          <div class="project-body">
+            <div class="project-top">
+              <h3>ONLINE LIBRARY</h3>
+              <span class="badge">Full Stack</span>
+            </div>
+            <p class="p">  Online library UI with search, sorting, and responsive card layout—built for a smooth browsing experience.</p>
+            <div class="tags">
+              <span class="tag">UI </span><span class="tag">JavaScript</span><span class="tag">REST API </span>
+            </div>
+            <div class="project-actions">
+              <a class="link" href="#" target="_blank" rel="noreferrer">Live</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE / EXPERIENCE -->
+  <section class="section" id="timeline">
+    <div class="container">
+      <h2 class="section-title reveal">Work Experience</h2>
+
+      <div class="timeline">
+        <div class="time-item reveal">
+          <div class="dot"></div>
+          <div class="time-card">
+            <h3> 2025-2026 | Self Employee</h3>
+            <p class="muted">Freelance Full-Stack Developer</p>
+            <p class="p">Providing end-to-end web application development services, including design, backend logic, database management, and deployment.
+                Worked on real production projects such as Moringa, delivering scalable and maintainable solutions for clients..</p>
+          </div>
+        </div>
+
+        <div class="time-item reveal">
+          <div class="dot"></div>
+          <div class="time-card">
+            <h3>Shenkar — Academic Excellence Program</h3>
+            <p class="muted">2024 | Ramat Gan</p>
+            <p class="p">Delivered custom web solutions for clients on Upwork and Fiverr, focusing on full-stack development, clean UI, and reliable backend services.AND Programming mentor & academic projects support.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="section-title reveal">Skills</h2>
+
+      <div class="grid skills-grid">
+        <div class="skill-card reveal">
+          <h3>Programming & Scripting</h3>
+          <ul>
+            <li>Python</li>
+            <li>C / C++</li>
+            <li>JavaScript</li>
+            <li>Bash / PowerShell</li>
+          </ul>
+        </div>
+
+        <div class="skill-card reveal">
+          <h3>Databases</h3>
+          <ul>
+            <li>MongoDB</li>
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+          </ul>
+        </div>
+
+        <div class="skill-card reveal">
+          <h3>Cloud</h3>
+          <ul>
+            <li>AWS</li>
+            <li>Docker</li>
+            <li>CI/CD</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+<section class="section" id="certs">
+  <div class="container">
+    <h2 class="section-title reveal">Certifications</h2>
+
+    <!-- Full-Stack – Yaniv Arad -->
+    <div class="card reveal cert-card">
+      <div class="cert-left">
+        <img
+          src="assets/certificates/fullstack-yaniv-arad.jpg"
+          alt="Full-Stack Certificate - Yaniv Arad"
+        />
+      </div>
+
+      <div class="cert-right">
+        <div>
+          <h3>Full-Stack Web Development</h3>
+          <p class="muted">Issued by Yaniv Arad</p>
+        </div>
+
+        <a
+          class="btn tiny"
+          href="assets/certificates/fullstack-yaniv-arad.jpg"
+          target="_blank"
+          rel="noreferrer"
+        >
+          View Certificate
+        </a>
+      </div>
+    </div>
+
+    <!-- Cyber Security – Cisco -->
+    <div class="card reveal cert-card">
+      <div class="cert-left">
+        <img
+          src="assets/certificates/cyber-cisco.jpg"
+          alt="Cyber Security Certificate - Cisco Networking Academy"
+        />
+      </div>
+
+      <div class="cert-right">
+        <div>
+          <h3>Cyber Security</h3>
+          <p class="muted">Cisco Networking Academy</p>
+        </div>
+
+        <a
+          class="btn tiny"
+          href="assets/certificates/cyber-cisco.jpg"
+          target="_blank"
+          rel="noreferrer"
+        >
+          View Certificate
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title reveal">Contact</h2>
+
+      <div class="card reveal">
+        <p class="p">Email: <a class="link" href="mailto:you@email.com">khairy.kreem.2002@gmail.com</a></p>
+        <p class="p">LinkedIn: <a class="link" href="#" target="_blank" rel="noreferrer">https://www.linkedin.com/in/khairy-krayyem-5a1392377/</a></p>
+        <p class="p">GitHub: <a class="link" href="#" target="_blank" rel="noreferrer">https://github.com/khairykrayyem</a></p>
+      </div>
+
+      <footer class="footer">
+        <p class="muted">© <span id="year"></span> khairykrayyem. All rights reserved.</p>
+      </footer>
+    </div>
+  </section>
+
+  <!-- Example Modal -->
+  <div class="modal" id="modal1" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-box">
+      <div class="modal-head">
+        <h3>WildRydes — Details</h3>
+        <button class="x" data-close aria-label="Close">✕</button>
+      </div>
+      <p class="p">
+        Add a short description: architecture, AWS services used, challenges, and what you learned.
+      </p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
